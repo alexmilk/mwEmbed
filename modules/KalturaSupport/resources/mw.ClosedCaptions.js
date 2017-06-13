@@ -22,6 +22,7 @@
 			"toggleActiveCaption": false,
 			"useExternalClosedCaptions": false,
 			"offButtonPosition": "first",
+			"offButtonLabel": "Off",
 			"forceLoadLanguage": false,
 			"title": gM( 'mwe-embedplayer-timed_text'),
 			"smartContainer": "qualitySettings",
@@ -1078,7 +1079,7 @@
 		addOffButton: function() {
 			var _this = this;
 			this.getMenu().addItem({
-                'label': 'Off',
+                'label': this.getConfig("offButtonLabel"),
 				'attributes': {
 					'class': "offBtn"
 				},
